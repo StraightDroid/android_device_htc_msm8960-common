@@ -4,6 +4,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.legacyencoder=true \
     media.stagefright.less-secure=true
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bluetooth.dun=true \
+    ro.bluetooth.hfp.ver=1.5 \
+    ro.bluetooth.sap=true \
+    ro.bt.bdaddr_path=/sys/module/htc_bdaddress/parameters/bdaddress \
+    ro.qualcomm.bt.hci_transport=smd
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=dyn \
